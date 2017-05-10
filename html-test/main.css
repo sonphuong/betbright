@@ -3,6 +3,7 @@ div.wrapper {
   width: 1000px;
   height: 100vh;
   position: relative;
+
 }
 
 .box-shadow {
@@ -14,22 +15,30 @@ div.wrapper {
 
 
 /*flip*/
-
-​ div.card {
-  width: 651px;
-  height: 211px;
+#card {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 703px;
+  height: 211px;
+
+  transform: translate(-50%, -50%);
+}
+​div.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 651px;
+  height: 211px;
   margin-right: -50%;
   transform: translate(-50%, -50%);
 }
-
 #card>#bonus-box {
   transform: perspective( 600px) rotateY( 0deg);
   position: absolute;
   backface-visibility: hidden;
   transition: transform .5s linear 0s;
+  width: 100%;
 }
 
 #card>#tscs {
@@ -37,6 +46,7 @@ div.wrapper {
   position: absolute;
   backface-visibility: hidden;
   transition: transform .5s linear 0s;
+  width: 100%;
 }
 
 .tscs-text {
