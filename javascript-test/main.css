@@ -1,0 +1,14 @@
+
+.btn {
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #D4D5D9;
+  padding: 5px 15px;
+}
+
+.btn:hover {
+  background-color: #4CAF50;
+  color: white;
+}
