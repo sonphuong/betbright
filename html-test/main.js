@@ -14,7 +14,7 @@
 
   var btnFlip = document.getElementsByClassName("flip");
   for (var i = 0; i < btnFlip.length; i++) {
-      btnFlip[i].addEventListener('click', flip, false);
+    btnFlip[i].addEventListener('click', flip, false);
   }
 
 })();

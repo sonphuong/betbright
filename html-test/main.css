@@ -61,7 +61,6 @@
   [class*="col-"] {
     float: left;
     padding: 15px;
-    
   }
 
   @media only screen and (max-width: 768px) {
@@ -76,6 +75,7 @@
     height: auto;
   }
   /*responsive */
+
   #photo {
     padding: 0px 0px;
   }
@@ -134,18 +134,15 @@
 
   .tscs-text {
     max-height: 85px;
-
     overflow-y: auto;
   }
 
   .bonus-text {
     max-height: 98px;
-
     overflow-y: auto;
   }
 
   .title {
-
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
     font-size: 14pt;
