@@ -1,9 +1,8 @@
 div.wrapper {
   margin: 0 auto;
-  width: 1000px;
+  width: 701px;
   height: 100vh;
   position: relative;
-
 }
 
 .box-shadow {
@@ -15,38 +14,36 @@ div.wrapper {
 
 
 /*flip*/
-#card {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 703px;
-  height: 211px;
 
-  transform: translate(-50%, -50%);
+
+#card {
+  background-color: rgb(114, 121, 172);
 }
-​div.card {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 651px;
-  height: 211px;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-}
+
 #card>#bonus-box {
-  transform: perspective( 600px) rotateY( 0deg);
+  transform: perspective(600px) rotateY(0deg);
   position: absolute;
   backface-visibility: hidden;
   transition: transform .5s linear 0s;
+  top: 50%;
+  left: 0%;
+  margin-right: -50%;
   width: 100%;
+  height: 211px;
+  margin-top: -105px;  /* half height */
 }
 
 #card>#tscs {
-  transform: perspective( 600px) rotateY( 180deg);
+  transform: perspective(600px) rotateY(180deg);
   position: absolute;
   backface-visibility: hidden;
   transition: transform .5s linear 0s;
+  top: 50%;
+  left: 0%;
+  margin-right: -50%;
   width: 100%;
+  height: 211px;
+  margin-top: -105px;  /* half height */
 }
 
 .tscs-text {
