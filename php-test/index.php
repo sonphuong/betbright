@@ -21,7 +21,6 @@
       $now = strtotime("now");
       $nextTime='';
       $suppliedTime='';
-      echo "today is: ".$today =  date("l")."</br>";
 
       $thisWed = strtotime("Wednesday this week 8pm");
       $thisSat = strtotime("Saturday this week 8pm");
@@ -42,13 +41,8 @@
       }
       echo "Now is ".date("l Y-m-d h:i:s a", $now)."</br>";
       echo "Next Time: ".date( "l Y-m-d h a", $nextTime)."</br>";
-      echo "</br>";
-      echo "</br>";
-      $ntdt=ceil(($nextTime-time())/60/60/24);
-      echo "There are " . $ntdt ." days until next time."."</br>";
       echo "Supplied date: ".date( "l Y-m-d h a", $suppliedTime)."</br>";
-      $stdt=ceil(($suppliedTime-time())/60/60/24);
-      echo "There are " . $stdt ." days until suppliedTime."."</br>";
+
       ?>
     </div>
   </section>
