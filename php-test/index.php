@@ -39,9 +39,19 @@
         $nextTime = $nextWed;
         $suppliedTime = $nextSat;
       }
-      echo "Now is ".date("l Y-m-d h:i:s a", $now)."</br>";
-      echo "Next Time: ".date( "l Y-m-d h a", $nextTime)."</br>";
-      echo "Supplied date: ".date( "l Y-m-d h a", $suppliedTime)."</br>";
+      $moreInfo = "";
+      $today = date("Y-m-d", $now);
+      $nextTimeDay = date("Y-m-d", $nextTime);
+      if($today==$nextTimeDay){
+        $moreInfo = "Today at ";
+      }
+      echo "Now is: ".date("h:ia, l, Y-M-d", $now)."</br></br>";
+      ?>
+      <h4>Next Time: <?php echo $moreInfo.date( "ha, l, Y-M-d", $nextTime); ?></h4>
+      <h4>Supplied Time: <?php echo date( "ha, l, Y-M-d", $suppliedTime); ?></h4>
+      <?php
+
+
 
       ?>
     </div>
