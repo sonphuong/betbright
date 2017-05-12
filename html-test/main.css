@@ -12,11 +12,14 @@
 
   .tscs-text {
     max-height: 85px;
+  }
+
+  .overflow-y {
     overflow-y: auto;
   }
-  /* For mobile phones: */
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 700px) {
+    /* For mobile phones: */
     .tscs-text {
       max-height: 55px;
     }
@@ -27,7 +30,6 @@
     float: left;
     padding: 15px;
   }
-  /*for desktop*/
 
   @media only screen and (min-width: 768px) {
     /* For desktop: */
@@ -94,36 +96,35 @@
   }
   /*flip*/
 
-  #card>#bonus-box {
+  #card div.card {
+    top: 50%;
+    left: 0%;
+    margin-right: -50%;
+    width: 100%;
+    height: 217px;
+    margin-top: -105px;
     transform: perspective(600px) rotateY(0deg);
     -webkit-transform: perspective(600px) rotateY(0deg);
     position: absolute;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transition: transform .5s linear 0s;
-    top: 50%;
-    left: 0%;
-    margin-right: -50%;
-    width: 100%;
-    height: 217px;
-    margin-top: -105px;
-    /* half height */
   }
 
-  #card>#tscs {
-    transform: perspective(600px) rotateY(180deg);
-    -webkit-transform: perspective(600px) rotateY(180deg);
-    position: absolute;
+  #card>#bonus-box {
+    transform: perspective(600px) rotateY(0deg);
+    -webkit-transform: perspective(600px) rotateY(0deg);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    transition: transform .5s linear 0s;
-    top: 50%;
-    left: 0%;
-    margin-right: -50%;
-    width: 100%;
-    height: 217px;
-    margin-top: -105px;
-    /* half height */
+    z-index: 1;
+  }
+
+  #card>#tscs-box {
+    transform: perspective(600px) rotateY(180deg);
+    -webkit-transform: perspective(600px) rotateY(180deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: 0;
   }
   /*flip*/
 
