@@ -98,8 +98,8 @@
     transform: perspective(600px) rotateY(0deg);
     -webkit-transform: perspective(600px) rotateY(0deg);
     position: absolute;
-    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     transition: transform .5s linear 0s;
     top: 50%;
     left: 0%;
@@ -114,8 +114,8 @@
     transform: perspective(600px) rotateY(180deg);
     -webkit-transform: perspective(600px) rotateY(180deg);
     position: absolute;
-    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     transition: transform .5s linear 0s;
     top: 50%;
     left: 0%;
